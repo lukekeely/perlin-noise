@@ -29,19 +29,19 @@ In its simplest form, Perlin noise is generated using a lattice of points in N-d
 
 ### Mathematical Representation
 
-For a point \( P(x_1, x_2, ..., x_n) \) in N-dimensional space, the noise value is determined as follows:
+For a point $P(x_1, x_2, ..., x_n)$ in N-dimensional space, the noise value is determined as follows:
 
-1. **Identify Surrounding Points**: Find the lattice points surrounding \( P \), denoted as \( L_i \), where \( i \) ranges over the \( 2^n \) corners of the hypercube surrounding \( P \).
+1. **Identify Surrounding Points**: Find the lattice points surrounding $P$, denoted as $L_i$, where $i$ ranges over the $2^n$ corners of the hypercube surrounding $P$.
 
-2. **Dot Product**: Compute the dot product of the gradient vector at each \( L_i \) with the vector from \( L_i \) to \( P \). Let this be \( D_i(P) \).
+2. **Dot Product**: Compute the dot product of the gradient vector at each $L_i$ with the vector from $L_i$ to $P$. Let this be $D_i(P)$.
 
-3. **Interpolation**: Apply a smoothing (fade) function \( f(t) \) to each coordinate of \( P \), and interpolate these dot products \( D_i \) using \( f(t) \). The fade function is typically \( f(t) = 6t^5 - 15t^4 + 10t^3 \).
+3. **Interpolation**: Apply a smoothing (fade) function $f(t)$ to each coordinate of $P$, and interpolate these dot products $D_i$ using $f(t)$. The fade function is typically $f(t) = 6t^5 - 15t^4 + 10t^3$.
 
-4. **Noise Value**: The resulting value from this interpolation is the Perlin noise value at \( P \).
+4. **Noise Value**: The resulting value from this interpolation is the Perlin noise value at $P$.
 
 ### Generalization to N Dimensions
 
-The process described above can be generalized to an N-dimensional space by considering an N-dimensional hypercube surrounding the point \( P \). The computation involves \( 2^n \) dot products and a series of N-dimensional linear interpolations.
+The process described above can be generalized to an N-dimensional space by considering an N-dimensional hypercube surrounding the point $P$. The computation involves $2^n$ dot products and a series of N-dimensional linear interpolations.
 
 ## License
 
