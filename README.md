@@ -4,7 +4,7 @@
 
 This project focuses on the implementation and visualization of multi-dimensional Perlin noise, a technique commonly used in procedural texture generation and modeling of complex, natural phenomena. Initially conceptualized in 2D and 3D spaces, this project extends Perlin noise generation to 4D and explores its generalization to N dimensions.
 
-![Perlin Noise Animation](perlin_noise_4d.gif)
+<img src="perlin_noise_4d.gif" alt="Perlin Noise Animation" width="60%"/>
 
 ## Dependencies
 
